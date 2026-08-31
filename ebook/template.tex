@@ -1,0 +1,32 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.82in]{geometry}
+\usepackage{booktabs,longtable,array}
+\usepackage[table]{xcolor}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black,urlcolor=blue!55!black}
+\usepackage{fancyhdr}
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\small Microgreens From Seed to Sale}
+\cfoot{\thepage}
+\setlength{\parskip}{0.45em}
+\renewcommand{\arraystretch}{1.16}
+\definecolor{tablehead}{HTML}{245B45}
+\begin{document}
+\begin{titlepage}
+\centering
+\vspace*{2.2cm}
+{\Huge\bfseries $if(title)$$title$$endif$\par}
+\vspace{0.7cm}
+{\Large $if(subtitle)$$subtitle$$endif$\par}
+\vfill
+{\large A practical cultivation and small-farm business guide\par}
+\vspace{0.45cm}
+{\large $date$\par}
+\end{titlepage}
+\tableofcontents
+\newpage
+$body$
+\end{document}
